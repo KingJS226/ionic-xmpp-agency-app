@@ -1,0 +1,102 @@
+page-usefulinfo {
+	.title1{
+		color: #F41D15;
+	}
+	.maincontent{
+		height: 95vh;
+		padding: 30px!important;
+	}
+	.drpdown{
+		background-color: #F3F4F6 !important;
+	}
+	.textclr{
+		color: #5B5B5B;
+	}
+	.header6{
+		text-align: center;
+		color: #787879;
+		font-weight: 400;
+	}
+	.borderdrop{
+		    border-bottom: 1px solid #C5C5C5;
+	}
+	.item-datetime .label-md {
+	    color: #222;
+	}
+	.item-input .label-md, .item-select .label-md, .item-datetime .label-md {
+	    color: #222;
+	}
+	.iconfix{
+		text-align: center;
+	}
+	.ionlbl{
+		margin: 0px;
+		color: #5B5B5B;
+		text-align: left;
+	}
+	.text-input-md{
+	    margin: 0px !important;
+	    padding: 0;
+	    width: calc(100% - 8px - 8px);
+	}
+	.text-input-ios{
+	    margin: 0px !important;
+	    padding: 0;
+	    width: calc(100% - 8px - 8px);
+	}
+	.text-input-wp{
+	    margin: 0px !important;
+	    padding: 0;
+	    width: calc(100% - 8px - 8px);
+	    border: 0px solid rgba(0, 0, 0, 0.5);
+		line-height: 0rem;
+	}
+	.oddcolor{
+		background-color: #EDECED;
+	}
+	.evencolor{
+		background-color: #DFDFDF;
+	}
+	.item-md.item-block .item-inner {
+	    padding-right: 8px;
+	    border-bottom: 0px solid rgb(222, 222, 222);
+	}
+	.item-ios.item-block .item-inner {
+	    padding-right: 8px;
+	    border-bottom: 0px solid rgb(222, 222, 222);
+	}
+	.item-wp.item-block .item-inner {
+	    padding-right: 8px;
+	    border-bottom: 0px solid rgb(222, 222, 222);
+	}
+	.select-md .select-icon .select-icon-inner {
+	    color: #222;
+	}
+	.select-ios .select-icon .select-icon-inner {
+	    color: #222;
+	}
+	.select-wp .select-icon .select-icon-inner {
+	    color: #222;
+	}
+	[padding] h1:first-child, [padding] h2:first-child, [padding] h3:first-child, [padding] h4:first-child, [padding] h5:first-child, [padding] h6:first-child {
+	    margin-top: 10px;
+	}
+	.select-md .select-icon .select-icon-inner {
+	    color: #F41D15;
+	}
+	.select-ios .select-icon .select-icon-inner {
+	    color: #F41D15;
+	}
+	.select-wp .select-icon .select-icon-inner {
+	    color: #F41D15;
+	}
+	.item-select .label-md{
+	    color: #5B5B5B;
+	}
+	.item-select .label-ios{
+	    color: #5B5B5B;
+	}
+	.item-select .label-wp{
+	    color: #5B5B5B;
+	}
+}	

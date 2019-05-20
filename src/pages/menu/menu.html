@@ -1,0 +1,102 @@
+<!--
+  Generated template for the MenuPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<header title=""> </header> 
+
+<ion-content class="padding-top" *ngIf="corpocustoContent">
+	<ion-grid class="firstgrid">
+		<ion-row>
+			<ion-col col-12 col-xl-12 col-lg-12 class="chatImg">
+				<img src="assets/imgs/Marqueta/aqu.png" class="img" (click)="chatting()">
+			</ion-col>
+		</ion-row>
+		<br/>
+		<br/>
+		<ion-row padding class="ipad768">
+			<ion-col col-6 col-xl-6 col-lg-6 col-md-6 (click)="traveladvice()" class="coladvice">
+				<img src="assets/imgs/Marqueta/img_2.png" class="travelImg">
+				<p class="para">Consejos <br> para tu viaje</p>
+			</ion-col>
+			<ion-col col-6 col-xl-6 col-lg-6 col-md-6 (click)="usefulinfo()" class="colinfo">
+				<img src="assets/imgs/Marqueta/img_3.png" class="infoImg">
+				<p class="para">Datos utiles</p>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+	<div class="error-message">
+		{{error}}
+	</div>
+	<ion-grid>
+		<ion-row>
+			<ion-col col-12 col-xl-12>
+				<div class="calldiv">
+					<ion-grid (click)="phone()">
+						<ion-row>
+							<ion-col col-3 col-xl-3 class="callImg">
+								<img src="assets/imgs/Marqueta/coll.png">
+							</ion-col>
+							<ion-col col-6 col-xl-6 class="callpara">
+									<p class="para1"><b class="para2">SOS</b> <br/>para tu viaje</p>
+							</ion-col>
+						</ion-row>
+					</ion-grid>
+				</div>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+	
+	<ion-footer class="footer hideElementOnKeyboardShown hide-on-keyboard-open applyFooter">
+	  <a href="http://gearlabs.cl/" onclick="window.open(this.href, '_blank', 'location=no'); return false;"><img class="footerlogo" src="assets/imgs/Marqueta/paer.png"></a>
+	</ion-footer>
+</ion-content>
+
+<ion-content class="padding-top" *ngIf="travelAgencyContent">
+	<ion-grid class="firstgrid">
+		<ion-row>
+			<ion-col col-12 col-xl-12 col-lg-12 class="chatImg">
+				<img src="assets/imgs/Marqueta/cdqw.jpg" class="img">
+				<!-- <button class="imgbtn"><img src="assets/imgs/Marqueta/cdqw.jpg" class="img" (click)="chatting()"><button ion-button class="aquibtn" (click)="chatting()">AQUI</button></button> -->
+			</ion-col>
+		</ion-row>
+		<br/>
+		<br/>
+		<ion-row padding class="ipad768">
+			<ion-col col-6 col-xl-6 col-lg-6 col-md-6 (click)="traveladvice()" class="coladvice" style="background-color: #CE1803;">
+				<img src="assets/imgs/Marqueta/ascsac.jpg" class="travelImg1">
+				<p class="para">Consejos <br> para tu viaje</p>
+			</ion-col>
+			<ion-col col-6 col-xl-6 col-lg-6 col-md-6 (click)="usefulinfo()" class="colinfo" style="background-color: #817F86;">
+				<img src="assets/imgs/Marqueta/qqq.jpg" class="infoImg1">
+				<p class="para">Datos utiles</p>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+	<ion-grid>
+		<ion-row>
+			<ion-col col-12 col-xl-12>
+				<div class="calldiv">
+					<ion-grid (click)="phone()">
+						<ion-row>
+							<ion-col col-3 col-xl-3 class="callImg">
+								<img src="assets/imgs/Marqueta/coll.png">
+							</ion-col>
+							<ion-col col-6 col-xl-6 class="callpara">
+									<p class="para1"><b class="para2">SOS</b> <br/>para tu viaje</p>
+							</ion-col>
+						</ion-row>
+					</ion-grid>
+				</div>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+	<div class="error-message">
+		{{error}}
+	</div>
+	<ion-footer class="footer hideElementOnKeyboardShown hide-on-keyboard-open applyFooter">
+	  <a href="http://gearlabs.cl/" onclick="window.open(this.href, '_blank', 'location=no'); return false;"><img class="footerlogo" src="assets/imgs/Marqueta/paer.png"></a>
+	</ion-footer>
+</ion-content>

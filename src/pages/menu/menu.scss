@@ -1,0 +1,317 @@
+page-menu {
+
+	.chatImg{
+		margin-bottom: -30px;
+	}
+	.coladvice{
+		background-color: #0071CE;
+		border-top-left-radius: 15px;
+    	border-bottom-left-radius: 15px;
+    	cursor: pointer;
+	}
+	.colinfo{
+		background-color: #00953A;
+		border-top-right-radius: 15px;
+    	border-bottom-right-radius: 15px;
+    	cursor: pointer;
+	}
+	.para{
+		text-align: center;
+	    color: #ffffff;
+	    margin-top: -42%;
+	    font-size: 18px;
+	}
+	.btn:hover{
+		background-image:none;
+		background-color:#8e8f91;
+
+	}
+	.aquibtn{
+		font-variant: small-caps;
+	    font-weight: 400;
+	    background-color: #ffffff;
+	    border-radius: 20px;
+	    border: 0.5px solid #159815;
+	    text-transform: none;
+	    height: 33px;
+	    width: 16rem;
+	    bottom: 55px;
+	    margin: auto;
+	    color: #000;
+	}
+	.img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+	    display: block;
+	    max-width: 106%;
+	    height: auto;
+	    margin-left: -10px;
+	}
+	.img {
+	    min-width: 110%;
+	    border: 0;
+	    margin-left: -17px;
+	}
+	.imgbtn{
+		background-color: transparent;
+	}
+	button:hover{
+		opacity: 0.85;
+	}
+	.platform-ios .head{
+	    font-size: 13px;
+	}
+	.platform-android .head{
+	    font-size: 13px;
+	}
+	p{
+		text-align: left;
+	}
+	h6 {
+	    margin-top: 1.6rem;
+	    margin-bottom: 1rem;
+	    font-weight: 400;
+	    line-height: 1.2;
+	    color: grey;
+        display: block;
+	    padding: 0px 0px 0px 0px;
+	    color: #636467;
+	    font-weight: lighter;
+	    font-size: 1em;
+	}
+	a, a:hover, a:link {
+	    color: #FF5F00;
+	    text-decoration: none;
+	    font-family: 'Din-Medium', Sans-Serif;
+	}
+
+	ion-footer {
+	    left: 0;
+	    bottom: 42px;
+	    position: absolute;
+	    z-index: 10;
+	    display: block;
+	    width: 100%;
+	}
+	.travelImg{
+        height: 100px;
+	    margin-left: -6px;
+	    min-width: 111%;
+	    border: 0;
+	    border-bottom-left-radius: 5px;
+	    border-top-left-radius: 15px;
+	    margin-top: -6px;
+	}
+	.travelImg1{
+		margin-left: -6px;
+	    max-width: 110%;
+	    border: 0;
+	    border-bottom-left-radius: 5px;
+	    border-top-left-radius: 15px;
+	    margin-top: -6px;
+	    height: 100px;
+	}
+	.infoImg1{
+        margin-left: -6px;
+	    max-width: 109%;
+	    border: 0;
+	    border-bottom-right-radius: 5px;
+	    border-top-right-radius: 15px;
+	    margin-top: -6px;
+	    height: 102%;
+	}
+	.infoImg{
+		margin-left: -6px;
+	    min-width: 108%;
+	    border: 0;
+	    border-bottom-right-radius: 5px;
+	    border-top-right-radius: 15px;
+	    margin-top: -6px;
+	    height: 102%;
+	}
+	.calldiv{
+		border: 1px solid #B3061E;
+		max-height: 80px;
+    	background-color: #ffffff;
+	}
+	.padding-top{
+		background-color: #F2F2F2;
+	}
+	.callImg{
+		text-align: center;
+		margin-top: 15px;
+	}
+	.callpara{
+		text-align: center !important;
+		color: #B3061E;
+	}
+	[col-xl-6] {
+ 	   padding: 6px;
+	}
+	.para1{
+		text-align: center;
+		font-size: 16px;
+		margin-top: 5px;
+	}
+	.para2{
+		font-size: 24px;font-weight: 400;
+	}
+	.ipad768{
+		height: 142px;
+	}
+
+	@media(min-width: 768px) and (max-width: 1024px){
+		.imgbtn{
+		   width: 100%;
+		}
+		.firstgrid{
+			height: 75%;
+		}
+		.travelImg{
+		    width: 103%;
+		    height: 97%;
+		}
+		.infoImg{
+            margin-left: -8px;
+		    margin-top: -6px;
+		    height: 97%;
+		    min-width: 104%;
+		}
+		.travelImg1{
+		    width: 103%;
+		    height: 92%;
+		}
+		.infoImg1{
+		    max-width: 103%;
+		    margin-left: -7px;
+		    margin-top: -7px;
+		    height: 92%;
+		}
+		.ipad768{
+			min-height: 40%;
+		}
+		.para{
+		    font-size: 35px;
+		}
+	}
+
+	@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+
+	}
+
+	/* ----------- iPhone X ----------- */
+
+	/* Portrait and Landscape */
+	@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) { 
+		.infoImg {
+			max-height: 92%;
+			min-width: 108% !important;
+		}
+		.travelImg {
+		    margin-left: -6px !important;
+		    max-width: 108%;
+		}
+	}
+
+	/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+	/* Portrait and Landscape */
+	@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+		.infoImg {
+		    margin-left: -6px;
+		    max-width: 110%;
+		    border: 0;
+		    border-bottom-right-radius: 5px;
+		    border-top-right-radius: 15px;
+		    margin-top: -6px;
+		    height: 100px;
+		}
+		.travelImg {
+		    margin-left: -6px;
+		    max-width: 110%;
+		    border: 0;
+		    border-bottom-left-radius: 5px;
+		    border-top-left-radius: 15px;
+		    margin-top: -6px;
+		    height: 100px;
+		}
+		.travelImg1 {
+			margin-left: -6px;
+		    max-width: 110%;
+		    border: 0;
+		    border-bottom-left-radius: 5px;
+		    border-top-left-radius: 15px;
+		    margin-top: -6px;
+		    height: 100px;
+		}
+		.infoImg1 {
+			margin-left: -6px;
+		    max-width: 110%;
+		    border: 0;
+		    border-bottom-right-radius: 5px;
+		    border-top-right-radius: 15px;
+		    margin-top: -6px;
+		    height: 100px;
+		}
+		// .ipad768{
+		// 	margin-bottom: -20px;
+		// 	min-height: 40%;
+		// }
+	}
+
+	/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+	/* Portrait and Landscape */
+	@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) { 
+		.travelImg {
+			max-height: 100%;
+			min-width: 122%;
+		}
+		.infoImg {
+			max-height: 100%;
+			max-width: 107% !important;
+		}
+		.travelImg1 {
+			max-height: 100%;
+			min-width: 122%;
+		}
+		.infoImg1 {
+			max-height: 100%;
+			min-width: 108%;
+		}
+	}
+	/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+	/* Portrait and Landscape */
+	@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) { 
+		.travelImg {
+		    margin-left: -5px;
+		    min-width: 108%;
+	    }
+	    .infoImg {
+		    margin-top: -6px;
+    		height: 105%;
+    		min-width: 108% !important;
+		}
+		.travelImg1 {
+		    margin-left: -5px;
+		    max-width: 108%;
+	    }
+	    .infoImg1 {
+			margin-left: -6px;
+    		max-width: 107%;
+		}
+	}
+
+	/* ----------- Galaxy S4, S5 and Note 3 ----------- */
+
+	/* Portrait and Landscape */
+	@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
+		.travelImg {
+		    // max-height: 105px;
+		    height: 107px;
+	    }
+		.infoImg {
+	        min-width: 108% !important;
+	        max-height: 103%;
+		}
+	}
+}

@@ -1,0 +1,19 @@
+header {
+
+	[nav-bar-transition="ios"] [nav-bar="active"] .bar, [nav-bar-transition="ios"] [nav-bar="entering"] .bar {
+ 	   background: #F3F4F6;
+	}
+	.bar.bar-stable {
+	    border-color: #F3F4F6;
+	    background-color: #F3F4F6;
+	    background-image: linear-gradient(0deg, #F3F4F6, #F3F4F6 50%, transparent 50%);
+	    color: #444;
+	}
+	.back-button.show-back-button {
+	    display: none;
+	}
+	.custom-header{
+		min-width: 100;
+		height: 40px !important;
+	}
+}

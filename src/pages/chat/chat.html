@@ -1,0 +1,80 @@
+
+<ion-header>
+  <ion-navbar>   
+    <ion-grid>
+      <ion-row>
+        <ion-col col-2 col-xl-2>
+          <ion-buttons>
+            <button ion-button menuToggle> <img src="assets/imgs/Marqueta/menu.png"></button>
+          </ion-buttons>
+        </ion-col>
+        <ion-col col-8 col-xl-8 *ngIf="corpocustoHeader">
+          <ion-buttons text-center>
+            <button ion-button> <img src="{{companyLogo}}" style="height: 40px;"></button>
+          </ion-buttons>
+        </ion-col>
+        <ion-col col-8 col-xl-8 *ngIf="travelAgencyHeader" class="custom-header">
+          <ion-buttons text-center>
+            <button ion-button class="custom-header"> <img src="assets/imgs/Marqueta/logo.png" style="height: 30px;"></button>
+          </ion-buttons>
+        </ion-col>
+        <ion-col col-2 col-xl-2 style="text-align: right !important;">
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-navbar>
+</ion-header> 
+
+<ion-content>
+  <ion-grid class="headuser">
+    <ion-row>
+      <ion-col col-1 col-xl-1 style="text-align: center!important">
+          <ion-icon name="ios-arrow-back" class="backicon" (click)="goback()"></ion-icon>
+      </ion-col>
+      <ion-col col-9 col-xl-9>
+          <p class="chathead"><b style="color: #5BA870;">{{name}}</b><br/>Online now</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <div class="message-wrap">
+    <div *ngFor="let msg of messages"
+         class="message"
+         [class.left]=" msg.userId === user.id "
+         [class.right]=" msg.userId === toUser.id">
+      <img class="user-img" alt="" src="assets/imgs/Marqueta/dgs.png" *ngIf="msg.userId === user.id">
+      <img class="user-img" alt="" src="assets/imgs/Marqueta/ad.png" *ngIf="msg.userId === toUser.id">
+      <div class="msg-detail">
+        <div class="msg-content">
+          <span class="triangle"></span>
+          <p *ngIf = "!msg.file" class="line-breaker " [innerHTML]="msg.text">{{msg.text}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{msg.time}}</p>
+          <p *ngIf = "msg.file" class="line-breaker " [innerHTML]="msg.text" (click)="fileDownLoad(msg.downloadUri)">{{msg.text}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{msg.time}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>
+
+<ion-footer class="footer">
+  <ion-grid >
+    <ion-row>
+      <ion-col col-3 col-xl-3>
+        <button class="emojiIcon" ion-button clear icon-only item-right (click)="switchEmojiPicker()">
+          <ion-icon name="md-happy" (click)="switchEmojiPicker()"></ion-icon>
+        </button>
+        <button class="emojiIcon" ion-button clear icon-only item-right (click)="sendFile()">
+          <ion-icon name="attach"></ion-icon>
+        </button>
+      </ion-col>
+      <ion-col col-8 col-xl-8>
+        <ion-textarea type="text" #chat_input
+              [(ngModel)]="editorMsg"
+              (keyup.enter)="sendMsg()"
+              (focusin)="onFocus()" pellcheck="true" autoComplete="true" autocorrect="true" placeholder="Enviar mansaje..." [(ngModel)]="message" class="textmsg"></ion-textarea>
+      </ion-col>
+      <ion-col col-1 col-xl-1 style="margin-top: 6px;">
+        <img src="assets/imgs/Marqueta/send-button.png" (click)="sendMsg()">
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+   <emoji-picker *ngIf="showEmojiPicker == true" [(ngModel)]="editorMsg"></emoji-picker>
+</ion-footer>

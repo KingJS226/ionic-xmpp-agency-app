@@ -1,0 +1,7 @@
+{
+  "name": "chatdemo",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

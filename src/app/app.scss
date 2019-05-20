@@ -1,0 +1,196 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+// @font-face {
+//     font-family: '';
+//     src: url('../assets/fonts/DIN-RegularAlternate.ttf');
+// }
+
+//  ion-content, form, ion-item, ion-label, ion-input, p{
+//     font-family: '' !important;
+// }
+
+// @font-face {
+//   font-family: 'Raleway';
+//   src: url('../assets/fonts/Raleway.woff2') format('woff2');
+// }
+
+// * {
+//   font-family: Raleway;
+// }
+
+@font-face {
+  font-family: 'Din';
+  src: url('../assets/fonts/DINPro-Regular.e96653d.woff2') format('woff2');
+}
+
+* {
+  font-family: Din;
+}
+
+// DINPro-Regular.e96653d.woff2
+
+// @font-face {
+//     font-family: 'Raleway';
+//     src: url('../assets/fonts/raleway.woff2');
+// }
+
+// body, span, button, h1, h3, h5, h6, p, div, ion-item, ion-title, li, a, img, textarea, input, ion-content {
+//     font-family: 'Raleway', sans-serif !important;
+// }
+
+.padding-top {
+  margin-top: 48px !important;
+}
+.ios ion-nav > .ion-page > .toolbar.statusbar-padding:first-child, .ios ion-nav > .ion-page > ion-header > .toolbar.statusbar-padding:first-child, .ios ion-tab > .ion-page > .toolbar.statusbar-padding:first-child, .ios ion-tab > .ion-page > ion-header > .toolbar.statusbar-padding:first-child, .ios ion-tabs > .ion-page.tab-subpage > ion-header > .toolbar.statusbar-padding:first-child, .ios ion-menu > .menu-inner > .toolbar.statusbar-padding:first-child, .ios ion-menu > .menu-inner > ion-header > .toolbar.statusbar-padding:first-child {
+    padding-top: calc(20px + 4px);
+    padding-top: calc(constant(safe-area-inset-top) + 4px);
+    padding-top: calc(env(safe-area-inset-top) + 4px);
+    min-height: calc(0px + 20px);
+    min-height: calc(44px + constant(safe-area-inset-top));
+    min-height: calc(44px + env(safe-area-inset-top));
+}
+.toolbar-background-md {
+    border-color: #b2b2b2;
+    background: #F3F4F6;
+}
+.toolbar-background-ios {
+    background: #F3F4F6;
+}
+
+.toolbar-background-wp {
+    border-color: #b2b2b2;
+    background: #F3F4F6;
+}
+
+.platform-ios .padding-top{
+    margin-top: 50px !important;
+}
+.platform-android .padding-top{
+    margin-top: 45px !important;
+}
+.platform-windows .padding-top{
+    margin-top: 35px !important;
+}
+
+.list-md .item-block .item-inner {
+    border-bottom: 1px solid #2E2B2C;
+}
+.list-wp .item-block .item-inner {
+    border-bottom: 1px solid #2E2B2C;
+}
+
+.platform-ios .list-md .item-block{
+    border-bottom: 1px solid #2E2B2C;
+}
+.platform-wp .list-md .item-block{
+    border-bottom: 1px solid #2E2B2C;
+}
+.list-ios > .item-block:first-child {
+    border-top: 0.55px solid #2E2B2C;
+}
+.list-ios .item-block .item-inner {
+    border-bottom: 0.55px solid #2E2B2C;
+}
+.list-ios > .item-block:last-child, .list-ios > .item-wrapper:last-child .item-block {
+    border-bottom: 0.55px solid #2E2B2C;
+}
+
+.item-md ion-icon[item-left] + .item-inner, .item-md ion-icon[item-left] + .item-input, .item-md ion-icon[item-start] + .item-inner, .item-md ion-icon[item-start] + .item-input {
+    margin-left: 10px;
+}
+.no-scroll .scroll-content{
+     overflow: hidden;
+}
+
+.menubtn{
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    padding-left: 5px;
+    border-bottom: 1px solid #706e6f;
+}
+
+// .platform-ios 
+// {
+//     page-menu { // replaced by your page HERE
+//         top: 20px !important;
+//     }
+//     page-home { // replaced by your page HERE
+//         top: 20px !important;
+//     }
+//     page-chat { // replaced by your page HERE
+//         top: 20px !important;
+//     }
+//     page-passportlogin { // replaced by your page HERE
+//         top: 20px !important;
+//     }
+//     page-password { // replaced by your page HERE
+//         top: 20px !important;
+//     }
+//     page-traveladvice { // replaced by your page HERE
+//         top: 20px !important;
+//     }
+//     page-usefulinfo { // replaced by your page HERE
+//         top: 20px !important;
+//     }
+// }
+.toolbar-ios {
+    // // padding-top: 15px;
+    // padding-left: 4px;
+    // padding-right: 4px;
+    // min-height: 61px;
+    padding-top: 18px;
+    padding-bottom: 0px !important;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.error-message{
+    color: red;
+    text-align: center;
+}
+.platform-ios .ios-header {
+  height:calc(58px + 22px);
+  min-height:calc(58px + 22px);
+  padding-top:25px;
+}
+// body.keyboard-is-open ion-footer {
+//   display: none;
+// }
+
+body.keyboard-is-open .scroll-content {
+  margin-bottom: 0 !important;
+}
+
+body.keyboard-is-open .fixed-content {
+  margin-bottom: 0 !important;
+}
+
+body.keyboard-is-open .applyFooter{
+        display: none;
+        bottom: 0;
+}
+.toast-success {
+  > div{
+       background-color:#00c851!important;
+   }
+}
+.toast-error {
+    > div{
+       background-color:#ff3547!important;
+   }
+}

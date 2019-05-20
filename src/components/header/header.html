@@ -1,0 +1,44 @@
+<!-- Generated template for the HeaderComponent component -->
+<!-- <div>
+  {{text}}
+</div> -->
+
+
+<ion-header>
+  <ion-navbar>   
+    <ion-grid>
+      <ion-row>
+        <ion-col col-2 col-xl-2>
+          <ion-buttons>
+            <button ion-button menuToggle> <img src="assets/imgs/Marqueta/menu.png"></button>
+          </ion-buttons>
+        </ion-col>
+        <ion-col col-8 col-xl-8 *ngIf="corpocustoHeader" class="custom-header">
+        	<ion-buttons text-center>
+        		<button ion-button> <img src="{{companyLogo}}" style="height: 30px;"></button>
+        	</ion-buttons>
+        </ion-col>
+        <ion-col col-8 col-xl-8 *ngIf="travelAgencyHeader" class="custom-header">
+          <ion-buttons text-center>
+            <button ion-button class="custom-header"> <img src="assets/imgs/Marqueta/logo.png" style="height: 30px;"></button>
+          </ion-buttons>
+        </ion-col>
+        <ion-col col-2 col-xl-2 style="text-align: right !important;">
+            <ion-icon name="log-out" style="text-align: right;font-size: 32px;cursor: pointer;" (click)="logout()"></ion-icon>
+        </ion-col>
+        <!-- <ion-col col-2 col-xl-2 style="text-align: right !important;" *ngIf="travelAgencyBack">
+            <ion-icon name="log-out" style="text-align: right;font-size: 32px;" (click)="logout()"></ion-icon>
+        </ion-col> -->
+      </ion-row>
+    </ion-grid>
+       
+    <!-- <ion-title text-center> {{title}} </ion-title> -->
+    <!-- <button ion-button menuToggle end>
+      <ion-icon name="menu"></ion-icon>
+    </button> -->
+  
+	<!-- <button ion-button menuToggle icon-only>
+      <ion-icon name='menu'></ion-icon>
+    </button> -->
+  </ion-navbar>
+</ion-header> 

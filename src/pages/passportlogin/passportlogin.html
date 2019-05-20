@@ -1,0 +1,40 @@
+<!--
+  Generated template for the PassportloginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar *ngIf="headerdisplay">
+    <ion-title></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="padding-bottom has-header" scrollY="false" >
+	<form [formGroup]="passportloginForm" (submit)="passportlogin()" novalidate class="list center-form">
+		<img src="assets/imgs/Marqueta/logo.png" class="center loginimg">
+		<br/>
+		<br/>
+	  	<ion-item class="itemclr">
+	    	<ion-label stacked>Rut Usuario (ej. 9456789-K, 18934567-4)</ion-label>
+	    	<ion-input formControlName="usuario" type="text" [(ngModel)]="rut"
+        	[class.invalid]="!passportloginForm.controls.usuario.valid && passportloginForm.controls.usuario.dirty" (keypress)="onChange($event)"></ion-input>
+	  	</ion-item>
+	  	<div *ngIf="!passportloginForm.controls.usuario.valid  && passportloginForm.controls.usuario.dirty">
+	      	<p class="parag">Por favor ingrese un Rut válido.</p>
+	    </div>
+	    <br/>
+	    <div class="error-message">
+			{{error}}
+		</div>
+	    <br/>
+		<button ion-button type="submit" class="center btn">continuar</button>
+	</form>
+	<ion-footer class="footer hideElementOnKeyboardShown hide-on-keyboard-open applyFooter">
+	  <a href="http://gearlabs.cl/" onclick="window.open(this.href, '_blank', 'location=no'); return false;"><img class="footerlogo" src="assets/imgs/Marqueta/paer.png"></a>
+	</ion-footer>
+</ion-content>
+

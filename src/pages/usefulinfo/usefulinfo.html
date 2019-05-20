@@ -1,0 +1,185 @@
+<!--
+  Generated template for the UsefulinfoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-content scrollY="true" style="background-color: #F3F4F6" *ngIf="informations">
+	<ion-grid>
+		<ion-row>
+			<ion-col col- col-xl-1>
+				<img src="assets/imgs/Marqueta/keyboard-left-arrow-button.png" style="margin-top: 12px;" (click)="goback()">
+			</ion-col>
+			<ion-col col-10 col-xl-10 style="text-align: center;" *ngIf="corpocustoInfo">
+				<img src="{{getcompanyLogo}}" style="height: 40px;">
+			</ion-col>
+			<ion-col col-10 col-xl-10 style="text-align: center;" *ngIf="travelAgencyInfo">
+				<img src="assets/imgs/Marqueta/logo.png" style="height: 40px;">
+			</ion-col>
+			<ion-col col-1 col-xl-1>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+	<h6 class="header6">Datos Útiles</h6>
+	<ion-grid >
+		<ion-row class="borderdrop">
+			<ion-col col-12 col-xl-12>
+				<!-- <ion-item class="drpdown">
+				  <ion-label>Seleccione país</ion-label>
+				  <ion-select [(ngModel)]="country" (ionChange)="onCountryChange(country)">
+				    <ion-option *ngFor="let country of this.informations" [value]="country.nombre">{{country.nombre}}</ion-option>
+				  </ion-select>
+				</ion-item> -->
+
+				<ion-item>
+				    <ion-label>Seleccione país</ion-label>
+				    <select-searchable
+				        item-content
+				        [(ngModel)]="port"
+				        [items]="ports"
+				        itemValueField="datosutiles"
+				        itemTextField="nombre"
+				        [canSearch]="true"
+				        (onChange)="portChange($event)">
+				    </select-searchable>
+				</ion-item>
+			</ion-col>
+		</ion-row>
+		<div class="error-message">
+			{{error}}
+		</div>
+	<br/>
+	</ion-grid>
+		<!-- {{country.nombre}} -->
+		<!-- {{countrie}}
+		{{this.informations | json}} -->
+	<!-- <ion-grid *ngIf="country.nombre == countrie"> -->
+	<ion-grid *ngIf="selectedcountry">
+		<ion-row class="border oddcolor">
+			<ion-col col-1 col-xl-1 class="iconfix">
+				<img src="assets/imgs/Marqueta/paper-bill.png">
+			</ion-col>
+			<ion-col col-5 col-xl-5 class="textclr">
+				Moneda
+			</ion-col>
+			<ion-col col-6 col-xl-6 class="ionlbl">
+				{{moneda}}
+				<!-- <ion-label class="ionlbl">{{informations[0]?.moneda}}</ion-label> -->
+				<!-- <ion-label class="ionlbl">{{moneda}}</ion-label> -->
+			</ion-col>
+		</ion-row>
+
+		<ion-row class="border evencolor">
+			<ion-col col-1 col-xl-1 class="iconfix">
+				<img src="assets/imgs/Marqueta/bank-building.png">
+			</ion-col>
+			<ion-col col-5 col-xl-5 class="textclr">
+				Capital
+			</ion-col>
+			<ion-col col-6 col-xl-6 class="ionlbl">
+				{{capital}}
+				<!-- <ion-label class="ionlbl">{{informations[1]?.capital}}</ion-label> -->
+				<!-- <ion-label class="ionlbl">{{capital}}</ion-label> -->
+			</ion-col>
+		</ion-row>
+
+		<ion-row class="border oddcolor">
+			<ion-col col-1 col-xl-1 class="iconfix">
+				<img src="assets/imgs/Marqueta/earth-globe.png">
+			</ion-col>
+			<ion-col col-5 col-xl-5 class="textclr">
+				Idioma
+			</ion-col>
+			<ion-col col-6 col-xl-6 class="ionlbl">
+				{{idioma}}
+				<!-- <ion-label class="ionlbl">{{informations[2]?.idioma}}</ion-label> -->
+				<!-- <ion-label class="ionlbl">{{idioma}}</ion-label> -->
+			</ion-col>
+		</ion-row>
+
+		<ion-row >
+			<p class="title1">{{nombre}}</p>
+		</ion-row>
+
+		<ion-row class="border oddcolor">
+			<!-- {{phone | json} -->
+			<ion-col col-1 col-xl-1 class="iconfix">
+				<img src="assets/imgs/Marqueta/telephone-handle-silhouette.png">
+			</ion-col>
+			<ion-col col-5 col-xl-5 class="textclr">
+				Telefono consulado
+			</ion-col>
+			<ion-col col-6 col-xl-6 style="text-align: right;">
+				<ion-grid *ngFor="let phone of telephone">
+					<ion-row class="ionlbl" >
+						{{phone.numero}}
+						<!-- <ion-label class="ionlbl" style="text-align: right;">{{phone.numero}}</ion-label> -->
+					</ion-row>
+				</ion-grid>
+			</ion-col>
+		</ion-row>
+
+		<!-- <ion-row class="border evencolor">
+			<ion-col col-1 col-xl-1 >
+				
+			</ion-col>
+			<ion-col col-5 col-xl-5>
+				
+			</ion-col>
+			<ion-col col-6 col-xl-6>
+				<ion-input class="iontext" type="text" [(ngModel)]="numtwo"></ion-input>
+			</ion-col>
+		</ion-row>
+
+		<ion-row class="border oddcolor">
+			<ion-col col-1 col-xl-1>
+				
+			</ion-col>
+			<ion-col col-5 col-xl-5>
+				
+			</ion-col>
+			<ion-col col-6 col-xl-6>
+				<ion-input class="iontext" type="text" [(ngModel)]="numthree"></ion-input>
+			</ion-col>
+		</ion-row> -->
+
+		<ion-row class="border evencolor">
+			<ion-col col-1 col-xl-1 class="iconfix">
+				<img src="assets/imgs/Marqueta/maps-and-flags.png">
+			</ion-col>
+			<ion-col col-5 col-xl-5 class="textclr">
+				Direccion consulado
+			</ion-col>
+			<ion-col col-6 col-xl-6 class="ionlbl">
+				{{direccion}}
+				<!-- <ion-label class="ionlbl">{{userInfo[1]?.Direccion}}</ion-label> -->
+				<!-- <ion-label class="ionlbl">{{direccion}}</ion-label> -->
+			</ion-col>
+		</ion-row>
+
+		<ion-row class="border oddcolor">
+			<ion-col col-1 col-xl-1 class="iconfix">
+				<img src="assets/imgs/Marqueta/close-envelope.png">
+			</ion-col>
+			<ion-col col-5 col-xl-5 class="textclr">
+				correo electrónico
+			</ion-col>
+			<ion-col col-6 col-xl-6 class="ionlbl">
+				{{email}}
+				<!-- <ion-label class="ionlbl">{{userInfo[2]?.emails[0].email1}}</ion-label> -->
+				<!-- <ion-label class="ionlbl">{{email}}</ion-label> -->
+			</ion-col>
+		</ion-row>
+		<ion-row class="border evencolor">
+			<ion-col col-1 col-xl-1 class="iconfix">
+			</ion-col>
+			<ion-col col-5 col-xl-5 class="textclr">
+			</ion-col>
+			<ion-col col-6 col-xl-6>
+				<!-- <ion-label class="ionlbl">{{email}}</ion-label> -->
+				<!-- <ion-label class="ionlbl">{{userInfo[2]?.emails[1].email2}}</ion-label> -->
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+</ion-content>

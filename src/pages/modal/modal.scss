@@ -1,0 +1,31 @@
+page-modal {
+	.closebtn{
+		font-size: 30px;
+	}
+	.callimg{
+		height: 20px;
+    	width: 20px;
+	}
+	.callcol{
+	    align-items: center!important;
+	    justify-content: center!important;
+	    text-align: left!important;
+	}
+	p:hover{
+		color: blue;
+		text-decoration: underline;
+	}
+	.calling {
+		background-color: #CB0D12 !important;
+	}
+	p a{
+		color: whitesmoke;
+		text-decoration: none;
+	}
+	.list-ios > .item-block:last-child, .list-ios > .item-wrapper:last-child .item-block {
+	    border-bottom: none !important;
+	}
+	.list-ios > .item-block:first-child {
+	    border-top: none !important;
+	}
+}

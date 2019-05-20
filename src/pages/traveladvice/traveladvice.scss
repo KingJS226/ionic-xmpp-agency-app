@@ -1,0 +1,76 @@
+page-traveladvice {
+	.header6{
+		text-align: center;
+		color: #787879;
+		font-weight: 400;
+	}
+	.itemlist{
+		border-bottom: 1px solid #C5C5C5;
+		border-top: 1px solid #C5C5C5;
+		background-color: #F3F4F6;
+	}
+	.para{
+		// padding-top: 10px;
+  //   	padding-bottom: 10px;
+    	font-size: 12px;
+    	line-height: 18px;
+    	margin-top: 0px;
+	}
+	ion-label {
+	    display: block;
+	    font-size: inherit;
+	    text-overflow: ellipsis;
+	    white-space: normal;
+	    margin: 0px;
+	    overflow: hidden;
+	    flex: 1 1 0%;
+	}
+	.label-md {
+ 	   margin: 0px;
+	}
+	ion-list {
+	    margin: 0px;
+	    padding: 0;
+	    display: block;
+	    list-style-type: none;
+	    margin-left: -10px !important;
+	    margin-right: -10px !important;
+	}
+	.list-md {
+	    margin: 0px 0 1px;
+	}
+	.list-ios {
+	    margin: 0px 0 1px;
+	}
+	.list-wp {
+	    margin: 0px 0 1px;
+	}
+	.list-ios > .item-block:last-child, .list-ios > .item-wrapper:last-child .item-block {
+	    border-bottom: 0.55px solid #C5C5C5;
+	}
+	.list-ios > .item-block:first-child {
+	    border-top: 0.55px solid #C5C5C5;
+	}
+	.item-ios ion-thumbnail ion-img, .item-ios ion-thumbnail img {
+	    width: 80px;
+	    height: 80px;
+	}
+	.list-md .item-block .item-inner {
+    	border-bottom: none !important;
+	}
+	.list-ios .item-block .item-inner {
+    	border-bottom: none !important;
+	}
+	.setImage {
+		border-radius: 10px;
+	}
+	.setRow {
+		border-bottom: 2px solid #e0e0e0;
+	}
+	.setCol {
+		display: flex;
+    	align-items: center !important;
+    	justify-content: center !important;
+	}
+
+}
