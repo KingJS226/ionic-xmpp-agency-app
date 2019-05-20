@@ -97,6 +97,5 @@ import {FileOpener} from "@ionic-native/file-opener";
     SQLite,
     FileOpener
   ]
-  
 })
 export class AppModule {}
